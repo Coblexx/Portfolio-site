@@ -15,57 +15,56 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="content">
-      <nav class="nav-bar">
-        <div class="nav-logo-container">
-          <a href="#" class="nav-item nav-logo link" data-section="top"
-            >Hi, I'm Radosław</a
-          >
-        </div>
-        <div class="nav-links">
-          <a href="#" class="nav-item link" data-section="section-1"
-            >About me</a
-          >
-          <a href="#" class="nav-item link" data-section="section-2"
-            >Portfolio</a
-          >
-          <a href="#" class="nav-item link" data-section="section-3">Skills</a>
-          <a href="#" class="nav-item link" data-section="section-4">Contact</a>
-        </div>
-      </nav>
-      <main class="main">
-        <section id="section-1" class="section-container" name="about me">
-          <header class="header">
-            <h1 class="h1-primary">
-              <span class="h1-primary-main">Hi, I'm Radosław Głogowski!</span>
-              <span class="h1-primary-sub"
-                >I'm at the beginning of my journey to become a frontend
-                developer!
-              </span>
-            </h1>
-          </header>
-
-          <div class="header-img-container">
-            <img
-              src="/src/img/me-small.JPG"
-              data-src="/src/img/me.JPG"
-              alt="My picture"
-              class="img header-img lazy-loading"
-            />
-          </div>
-        </section>
-        <section
-          id="section-2"
-          name="portfolio"
-          class="section-container section-block"
+    <nav class="nav-bar">
+      <div class="nav-logo-container">
+        <a href="#" class="nav-item nav-logo link" data-section="top"
+          >Hi, I'm Radosław</a
         >
-          <h2 class="section-title">My work:</h2>
+      </div>
+      <div class="nav-links">
+        <a href="#" class="nav-item link" data-section="section-1">About me</a>
+        <a href="#" class="nav-item link" data-section="section-2">Portfolio</a>
+        <a href="#" class="nav-item link" data-section="section-3">Skills</a>
+        <a href="#" class="nav-item link" data-section="section-4">Contact</a>
+      </div>
 
-          <div class="section-content">
-            <div class="slider-container">
-              <div class="slider">
-                <!-- Dummy slider item: -->
-                <!-- <div class="slider-item">
+      <div class="nav-hamburger-menu">
+        <!-- hamburger menu -->
+      </div>
+    </nav>
+    <main class="main">
+      <section id="section-1" class="section-container" name="about me">
+        <header class="header">
+          <h1 class="h1-primary">
+            <span class="h1-primary-main">Hi, I'm Radosław Głogowski!</span>
+            <span class="h1-primary-sub"
+              >I'm at the beginning of my journey to become a frontend
+              developer!
+            </span>
+          </h1>
+        </header>
+
+        <div class="header-img-container">
+          <img
+            src="/src/img/me-small.JPG"
+            data-src="/src/img/me.JPG"
+            alt="My picture"
+            class="img header-img lazy-loading"
+          />
+        </div>
+      </section>
+      <section
+        id="section-2"
+        name="portfolio"
+        class="section-container section-block"
+      >
+        <h2 class="section-title">My work:</h2>
+
+        <div class="section-content">
+          <div class="slider-container">
+            <div class="slider">
+              <!-- Dummy slider item: -->
+              <!-- <div class="slider-item">
                   <p class="slider-title">My Title1! Awesome Project!</p>
                   <p class="slider-content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -79,93 +78,94 @@
                     >
                   </div>
                 </div> -->
-              </div>
-              <button
-                class="slider-btn"
-                id="slider-btn-prev"
-                data-slider-btn="prev"
-              >
-                &lsaquo;
-              </button>
-              <button
-                class="slider-btn"
-                id="slider-btn-next"
-                data-slider-btn="prev"
-              >
-                &rsaquo;
-              </button>
+            </div>
+            <button
+              class="slider-btn"
+              id="slider-btn-prev"
+              data-slider-btn="prev"
+            >
+              &lsaquo;
+            </button>
+            <button
+              class="slider-btn"
+              id="slider-btn-next"
+              data-slider-btn="prev"
+            >
+              &rsaquo;
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        id="section-3"
+        name="skills"
+        class="section-container section-block"
+      >
+        <h2 class="section-title">My skills:</h2>
+        <div class="section-content">
+          <div class="skill-container">
+            <div class="skill-container-item">
+              <p class="item-title skill-title">JavaScript</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                nec dictum ipsum, quis molestie leo. Integer blandit dapibus
+                porttitor.
+              </p>
+            </div>
+            <div class="skill-container-item">
+              <p class="item-title skill-title">React</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                nec dictum ipsum, quis molestie leo. Integer blandit dapibus
+                porttitor.
+              </p>
+            </div>
+            <div class="skill-container-item">
+              <p class="item-title skill-title">HTML & CSS</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                nec dictum ipsum, quis molestie leo. Integer blandit dapibus
+                porttitor.
+              </p>
+            </div>
+            <div class="skill-container-item">
+              <p class="item-title skill-title">Other</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                nec dictum ipsum, quis molestie leo. Integer blandit dapibus
+                porttitor.
+              </p>
             </div>
           </div>
-        </section>
-        <section
-          id="section-3"
-          name="skills"
-          class="section-container section-block"
-        >
-          <h2 class="section-title">My skills:</h2>
-          <div class="section-content">
-            <div class="skill-container">
-              <div class="skill-container-item">
-                <p class="item-title skill-title">JavaScript</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean nec dictum ipsum, quis molestie leo. Integer blandit
-                  dapibus porttitor.
-                </p>
-              </div>
-              <div class="skill-container-item">
-                <p class="item-title skill-title">React</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean nec dictum ipsum, quis molestie leo. Integer blandit
-                  dapibus porttitor.
-                </p>
-              </div>
-              <div class="skill-container-item">
-                <p class="item-title skill-title">HTML & CSS</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean nec dictum ipsum, quis molestie leo. Integer blandit
-                  dapibus porttitor.
-                </p>
-              </div>
-              <div class="skill-container-item">
-                <p class="item-title skill-title">Other</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean nec dictum ipsum, quis molestie leo. Integer blandit
-                  dapibus porttitor.
-                </p>
-              </div>
+        </div>
+      </section>
+      <section
+        id="section-4"
+        name="contact"
+        class="section-container section-block"
+      >
+        <h2 class="section-title">You can find me here:</h2>
+        <div class="contact-container">
+          <div class="contact-container-item">
+            <p class="title">Linkedin</p>
+            <div class="contact-img-container">
+              <a
+                href="https://www.linkedin.com/in/rados%C5%82aw-g%C5%82ogowski/"
+                target="_blank"
+                class="link"
+              >
+                <img
+                  src="/src/img/icons8-linkedin-100.png"
+                  alt=""
+                  class="img icon"
+                />
+              </a>
             </div>
           </div>
-        </section>
-        <section
-          id="section-4"
-          name="contact"
-          class="section-container section-block"
-        >
-          <h2 class="section-title">You can find me here:</h2>
-          <div class="contact-container">
-            <div class="contact-container-item">
-              <p class="title">Linkedin</p>
-              <div class="contact-img-container">
-                <a
-                  href="https://www.linkedin.com/in/rados%C5%82aw-g%C5%82ogowski/"
-                  target="_blank"
-                  class="link"
-                >
-                  <img
-                    src="/src/img/icons8-linkedin-100.png"
-                    alt=""
-                    class="img icon"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="contact-container-item">
-              <p class="title">Github</p>
-              <div class="contact-img-container">
+          <div class="contact-container-item">
+            <p class="title">
+              Github
+              <span class="icon-container">
                 <a
                   href="https://github.com/Coblexx"
                   target="_blank"
@@ -177,11 +177,11 @@
                     class="img icon"
                   />
                 </a>
-              </div>
-            </div>
+              </span>
+            </p>
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

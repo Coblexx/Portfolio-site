@@ -47,7 +47,7 @@ body {
 }
 
 .icon {
-  width: 80px;
+  width: 2.2rem;
 }
 
 .item-title {
@@ -55,7 +55,7 @@ body {
 }
 
 .main {
-  margin: 0 5rem;
+  margin: 0 3rem;
 }
 
 #section-1 {
@@ -70,7 +70,7 @@ body {
 }
 
 .section-content {
-  padding: 0 6rem;
+  padding: 0 3rem;
 }
 
 .section-title {
@@ -247,6 +247,67 @@ body {
 .contact-container-item > .title {
   font-size: 2rem;
   padding: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  .section-container {
+    display: block;
+    min-height: 16rem;
+    margin: 0;
+  }
+
+  .link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .link::after {
+    content: "";
+    position: relative;
+    background-color: #fff;
+    transition: none;
+  }
+
+  .link:hover::after {
+    width: 0%;
+  }
+
+  .nav-logo {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .nav-links,
+  .header-img-container,
+  .h1-primary-main {
+    display: none;
+  }
+
+  .main {
+    margin: 0;
+  }
+
+  .header {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .h1-primary-sub {
+    font-size: 1rem;
+    text-align: center;
+
+    animation: none;
+  }
 }
 
 @keyframes h1-main-slide {

@@ -20,7 +20,7 @@ const addSlides = [
   {
     title: "Live commerce platform! (in progress)",
     content:
-      "Me along with 6 people currently work on a Live commerce platform, where shops and creators can showcase and sell their products live! Me along with another team member are responsible for the frontend. (Repo coming soon)",
+      "Me along with 6 people are currently working on a Live commerce platform, where shops and creators can showcase and sell their products live! With another team member, I'm responsible for the frontend part. (Repo coming soon)",
     link: "",
   },
 ];
