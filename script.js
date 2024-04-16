@@ -40,8 +40,10 @@ navLinks.forEach((link) => {
 sections.forEach((section) => {
   const separator = document.createElement("div");
   separator.classList.add("separator");
+  console.log(sections);
 
-  section.parentNode.insertBefore(separator, section.nextSibling);
+  if (section.id !== "section-1")
+    section.parentNode.insertBefore(separator, section.nextSibling);
 });
 
 // STICKY NAV
