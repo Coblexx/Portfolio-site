@@ -1,11 +1,24 @@
 const navLinks = document.querySelectorAll(".nav-item");
+const navBar = document.querySelector(".nav-bar");
+const sectionOne = document.querySelector("#section-1");
 const logotype = document.querySelector(".logotype");
 const headerImg = document.querySelector(".header-img");
 
-const slides = document.querySelectorAll(".slider-item");
+const slider = document.querySelector(".slider");
+let slides = document.querySelectorAll(".slider-item");
 const sliderBtnNext = document.querySelector("#slider-btn-next");
 const sliderBtnPrev = document.querySelector("#slider-btn-prev");
 const lazyImg = document.querySelectorAll("img[data-src]");
+
+const addSlides = [
+  {
+    title: "Portfolio Site!",
+    content:
+      "This is a project, created by me to showcase my portfolio. It was built using pure HTML, CSS and JavaScript! You can check it out on github by clicking the link below:",
+    link: "https://github.com/Coblexx/Portfolio-site",
+  },
+  { title: "test", content: "test test", link: "" },
+];
 
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
@@ -15,6 +28,20 @@ navLinks.forEach((link) => {
     sectionNum.scrollIntoView({ behavior: "smooth" });
   });
 });
+
+// sticky nav
+function stickyNavObserver(entries) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) navBar.classList.add("sticky-nav");
+  else navBar.classList.remove("sticky-nav");
+}
+
+const sectonOneObserver = new IntersectionObserver(stickyNavObserver, {
+  root: null,
+  threshold: 0,
+});
+sectonOneObserver.observe(sectionOne);
 
 // LAZY LOADING
 function loadImg(imgs, observer) {
@@ -38,6 +65,26 @@ const lazyImgObserver = new IntersectionObserver(loadImg, {
 });
 lazyImg.forEach((img) => lazyImgObserver.observe(img));
 
+// add slides to the slider
+addSlides.forEach(function (slide) {
+  const { title, content, link = "#" } = slide;
+  const html = ` 
+  <div class="slider-item">
+  <p class="slider-title">${title}</p>
+  <p class="slider-content">
+    ${content}
+  </p>
+  <div class="slider-link-container">
+    <a href="${link}" class="slider-link link" target="_blank"
+      >Look it up on Github!</a
+    >
+  </div>`;
+
+  slider.insertAdjacentHTML("beforeend", html);
+  slides = document.querySelectorAll(".slider-item");
+});
+
+//slider nav
 let slideId = 0;
 const lastSlideId = slides.length - 1;
 
@@ -52,7 +99,6 @@ changeSlidePosition(0);
 
 sliderBtnNext.addEventListener("click", () => {
   slideId = slideId === lastSlideId ? 0 : slideId + 1;
-  console.log(slideId);
   changeSlidePosition(slideId);
 });
 

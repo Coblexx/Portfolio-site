@@ -102,6 +102,12 @@ body {
   margin: 0 2.1rem;
 }
 
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .header-img-container {
   display: flex;
   justify-content: center;
@@ -230,6 +236,8 @@ body {
   display: block;
   justify-content: center;
   text-align: center;
+
+  margin: 0 5rem;
 }
 
 .contact-container-item > .title {
