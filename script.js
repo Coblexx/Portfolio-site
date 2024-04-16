@@ -14,10 +14,15 @@ const addSlides = [
   {
     title: "Portfolio Site!",
     content:
-      "This is a project, created by me to showcase my portfolio. It was built using pure HTML, CSS and JavaScript! You can check it out on github by clicking the link below:",
+      "It's the site you are currently looking at, created by me to showcase my projects. It was built using pure HTML, CSS and JavaScript! You can check it out on github by clicking the link below:",
     link: "https://github.com/Coblexx/Portfolio-site",
   },
-  { title: "test", content: "test test", link: "" },
+  {
+    title: "Live commerce platform! (in progress)",
+    content:
+      "Me along with 6 people currently work on a Live commerce platform, where shops and creators can showcase and sell their products live! Me along with another team member are responsible for the frontend. (Repo coming soon)",
+    link: "",
+  },
 ];
 
 navLinks.forEach((link) => {
@@ -29,7 +34,7 @@ navLinks.forEach((link) => {
   });
 });
 
-// sticky nav logic
+// STICKY NAV
 function stickyNavObserver(entries) {
   const [entry] = entries;
 
@@ -73,7 +78,7 @@ const lazyImgObserver = new IntersectionObserver(loadImg, {
 });
 lazyImg.forEach((img) => lazyImgObserver.observe(img));
 
-// add slides to the slider
+// ADD SLIDES
 addSlides.forEach(function (slide) {
   const { title, content, link = "#" } = slide;
   const html = ` 
@@ -82,17 +87,22 @@ addSlides.forEach(function (slide) {
   <p class="slider-content">
     ${content}
   </p>
+  ${
+    link
+      ? ` 
   <div class="slider-link-container">
-    <a href="${link}" class="slider-link link" target="_blank"
-      >Look it up on Github!</a
-    >
-  </div>`;
+  <a href="${link}" class="slider-link link" target="_blank"
+    >Github link &rsaquo;</a
+  >
+</div>`
+      : ""
+  } `;
 
   slider.insertAdjacentHTML("beforeend", html);
   slides = document.querySelectorAll(".slider-item");
 });
 
-//slider nav
+// SLIDER LOGIC
 let slideId = 0;
 const lastSlideId = slides.length - 1;
 
