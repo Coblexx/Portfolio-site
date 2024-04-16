@@ -144,6 +144,8 @@ body {
   backface-visibility: hidden;
 }
 
+/* portfolio section */
+
 .slider-container {
   display: flex;
 
@@ -193,6 +195,8 @@ body {
   order: 1;
 }
 
+/* skill section */
+
 .skill-container {
   display: flex;
   flex-wrap: wrap;
@@ -228,37 +232,6 @@ body {
 .contact-container-item > .title {
   font-size: 2rem;
 }
-
-/* @media screen and (max-width: 900px) {
-  * {
-    font-size: 16px;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .nav-logo {
-    font-size: 2rem;
-  }
-
-  .header-img-container {
-    display: none;
-  }
-
-  .h1-primary-main {
-    width: inherit;
-    font-size: 18px;
-
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .h1-primary-sub {
-    font-size: inherit;
-  }
-} */
 
 @keyframes h1-main-slide {
   0% {
