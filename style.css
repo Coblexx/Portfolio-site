@@ -89,7 +89,7 @@ body {
 .nav-bar {
   display: flex;
 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   background-image: linear-gradient(
     to left,
     var(--main-bg-color1),
@@ -297,8 +297,9 @@ body {
 
   .section-container {
     display: block;
-    min-height: 16rem;
+    min-height: 20rem;
     margin: 0;
+    padding: 2rem 0;
   }
 
   .link {
@@ -328,22 +329,19 @@ body {
   }
 
   .nav-logo {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
 
   .nav-links,
   .h1-primary-main,
   .header-img-container,
   .header-img {
-    display: none !important;
-  }
-
-  .main {
-    margin: 0;
+    display: none;
   }
 
   .section-title {
     text-align: center;
+    padding: 1rem 2rem;
   }
 
   .header {
@@ -361,6 +359,36 @@ body {
 
     animation: none;
   }
+
+  /* slider */
+
+  .slider-btn {
+    position: absolute;
+    margin: 0 0.4rem;
+    padding: 0 0.4rem;
+
+    font-size: 3rem;
+
+    border: 1rem;
+    z-index: 3;
+  }
+
+  #slider-btn-next {
+    right: 0;
+    bottom: 10rem;
+  }
+
+  #slider-btn-prev {
+    left: 0;
+    bottom: 10rem;
+  }
+
+  .slider-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* skills */
 
   #section-4 {
     display: none;
