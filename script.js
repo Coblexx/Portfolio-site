@@ -42,9 +42,9 @@ let slideId = 0;
 const lastSlideId = slides.length - 1;
 
 function changeSlidePosition(curSlide) {
-  slides.forEach((slide, i) => {
+  slides.forEach((slide) => {
     const newPosition = 100 * -curSlide;
-    slide.style.transform = `translateX(${newPosition + i}%)`;
+    slide.style.transform = `translateX(${newPosition}%)`;
     slide.style.transition = "transform 0.5s ease";
   });
 }
@@ -60,6 +60,3 @@ sliderBtnPrev.addEventListener("click", () => {
   slideId = slideId === 0 ? lastSlideId : slideId - 1;
   changeSlidePosition(slideId);
 });
-
-//////////
-// nav observer api

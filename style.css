@@ -8,7 +8,7 @@ body {
   margin: 0 5em;
   color: white;
   font-family: "Roboto serif", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 200;
   background-image: linear-gradient(to left, #069b73, #1f403c);
 }
@@ -49,6 +49,10 @@ body {
 
 .icon {
   width: 80px;
+}
+
+.item-title {
+  font-size: 2rem;
 }
 
 #section-1 {
@@ -164,6 +168,7 @@ body {
 
 .slider-link-container {
   width: 100%;
+  padding: 2rem 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -190,6 +195,7 @@ body {
 
 .skill-container {
   display: flex;
+  flex-wrap: wrap;
 
   justify-content: space-around;
   width: 100%;
