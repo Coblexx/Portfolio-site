@@ -3,6 +3,7 @@ const navBar = document.querySelector(".nav-bar");
 const sectionOne = document.querySelector("#section-1");
 const logotype = document.querySelector(".logotype");
 const headerImg = document.querySelector(".header-img");
+const sections = document.querySelectorAll(".section-container");
 
 const slider = document.querySelector(".slider");
 let slides = document.querySelectorAll(".slider-item");
@@ -32,6 +33,15 @@ navLinks.forEach((link) => {
     sectionNum = document.querySelector(`#${link.dataset.section}`);
     sectionNum.scrollIntoView({ behavior: "smooth" });
   });
+});
+
+// ADD SEPARATOR AFTER EACH SECTION
+
+sections.forEach((section) => {
+  const separator = document.createElement("div");
+  separator.classList.add("separator");
+
+  section.parentNode.insertBefore(separator, section.nextSibling);
 });
 
 // STICKY NAV

@@ -1,6 +1,7 @@
 :root {
   --main-bg-color1: #069b73;
   --main-bg-color2: #1f403c;
+  --main-separator: #112b28;
 }
 
 * {
@@ -59,6 +60,13 @@ body {
   width: 2.2rem;
 }
 
+.separator {
+  border-bottom: 3px solid var(--main-separator);
+  opacity: 0.2;
+  width: 70%;
+  margin: 0 auto;
+}
+
 .item-title {
   font-size: 2rem;
 }
@@ -78,6 +86,8 @@ body {
   display: block;
   min-height: 32rem;
   padding: 3rem 5rem;
+
+  padding-bottom: 1rem;
 }
 
 .section-title {
@@ -389,6 +399,19 @@ body {
   }
 
   /* skills */
+
+  .skill-container {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .skill-container-item {
+    margin: 0;
+    padding: 0 3rem;
+    width: 80%;
+  }
+
+  /* contact */
 
   #section-4 {
     display: none;
