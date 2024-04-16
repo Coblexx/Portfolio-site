@@ -29,16 +29,24 @@ navLinks.forEach((link) => {
   });
 });
 
-// sticky nav
+// sticky nav logic
 function stickyNavObserver(entries) {
   const [entry] = entries;
 
-  if (!entry.isIntersecting) navBar.classList.add("sticky-nav");
-  else navBar.classList.remove("sticky-nav");
+  if (!entry.isIntersecting) {
+    navBar.classList.add("sticky-nav");
+    navBar.style.top = "0px";
+  } else {
+    setTimeout(() => {
+      navBar.classList.remove("sticky-nav");
+    }, 200);
+    navBar.style.top = "-80px";
+  }
 }
 
 const sectonOneObserver = new IntersectionObserver(stickyNavObserver, {
   root: null,
+  rootMargin: "-80px",
   threshold: 0,
 });
 sectonOneObserver.observe(sectionOne);

@@ -5,7 +5,6 @@
 }
 
 body {
-  margin: 0 5em;
   color: white;
   font-family: "Roboto serif", sans-serif;
   font-size: 1.3rem;
@@ -55,6 +54,10 @@ body {
   font-size: 2rem;
 }
 
+.main {
+  margin: 0 5rem;
+}
+
 #section-1 {
   display: flex;
   align-items: center;
@@ -78,11 +81,9 @@ body {
 
 .nav-bar {
   display: flex;
-  margin: 0;
-  padding: 0;
 
   justify-content: space-between;
-  padding: 2rem 0;
+  padding: 2rem 4rem;
 }
 
 .nav-logo {
@@ -92,7 +93,6 @@ body {
 
 .nav-links {
   align-items: center;
-  height: 4.2rem;
 }
 
 .nav-item {
@@ -106,6 +106,10 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to left, #069b73, #1f403c);
+  transition: top 0.2s ease-in-out;
 }
 
 .header-img-container {
