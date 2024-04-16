@@ -92,7 +92,7 @@ addSlides.forEach(function (slide) {
       ? ` 
   <div class="slider-link-container">
   <a href="${link}" class="slider-link link" target="_blank"
-    >Github link &rsaquo;</a
+    >Github &rsaquo;</a
   >
 </div>`
       : ""
