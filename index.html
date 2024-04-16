@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="content">
+      <nav class="nav-bar">
+        <div class="nav-logo-container">
+          <a href="#" class="nav-item nav-logo link" data-section="top">Logo</a>
+        </div>
+        <div class="nav-links">
+          <a href="#" class="nav-item link" data-section="section-1"
+            >About me</a
+          >
+          <a href="#" class="nav-item link" data-section="section-2"
+            >Portfolio</a
+          >
+          <a href="#" class="nav-item link" data-section="section-3">Skills</a>
+          <a href="#" class="nav-item link" data-section="section-4">Contact</a>
+        </div>
+      </nav>
+      <main>
+        <section id="section-1" class="section-container" name="about me">
+          <header class="header">
+            <h1 class="h1-primary">
+              <span class="h1-primary-main">Hi, I'm Radosław Głogowski!</span>
+              <span class="h1-primary-sub"
+                >I'm at the beginning of my journey to become a frontend
+                developer!
+              </span>
+            </h1>
+          </header>
+
+          <div class="header-img-container">
+            <img
+              src="/src/img/me-small.JPG"
+              data-src="/src/img/me.JPG"
+              alt="My picture"
+              class="img header-img lazy-loading"
+            />
+          </div>
+        </section>
+        <section
+          id="section-2"
+          name="portfolio"
+          class="section-container section-block"
+        >
+          <h2 class="section-title">My work:</h2>
+
+          <div class="section-content">
+            <div class="slider-container">
+              <div class="slider">
+                <div class="slider-item">
+                  <p class="slider-title">My Title1! Awesome Project!</p>
+                  <p class="slider-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean nec dictum ipsum, quis molestie leo. Integer blandit
+                    dapibus porttitor. Etiam vitae sem sit amet orci iaculis
+                    semper.
+                  </p>
+                  <div class="slider-link-container">
+                    <a href="" class="slider-link link" target="_blank"
+                      >See it on Github!</a
+                    >
+                  </div>
+                </div>
+
+                <div class="slider-item">
+                  <p class="slider-title">My Title2! Awesome Project!</p>
+                  <p class="slider-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean nec dictum ipsum, quis molestie leo. Integer blandit
+                    dapibus porttitor. Etiam vitae sem sit amet orci iaculis
+                    semper.
+                  </p>
+                  <div class="slider-link-container">
+                    <a href="" class="slider-link link" target="_blank"
+                      >See it on Github!</a
+                    >
+                  </div>
+                </div>
+
+                <div class="slider-item">
+                  <p class="slider-title">My Title3! Awesome Project!</p>
+                  <p class="slider-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean nec dictum ipsum, quis molestie leo. Integer blandit
+                    dapibus porttitor. Etiam vitae sem sit amet orci iaculis
+                    semper.
+                  </p>
+                  <div class="slider-link-container">
+                    <a href="" class="slider-link link" target="_blank"
+                      >See it on Github!</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <button
+                class="slider-btn"
+                id="slider-btn-prev"
+                data-slider-btn="prev"
+              >
+                &lsaquo;
+              </button>
+              <button
+                class="slider-btn"
+                id="slider-btn-next"
+                data-slider-btn="prev"
+              >
+                &rsaquo;
+              </button>
+            </div>
+          </div>
+        </section>
+        <section
+          id="section-3"
+          name="skills"
+          class="section-container section-block"
+        >
+          <h2 class="section-title">My skills:</h2>
+          <div class="section-content">
+            <div class="skill-container">
+              <div class="skill-container-item">
+                <p class="item-title skill-title">JavaScript</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean nec dictum ipsum, quis molestie leo. Integer blandit
+                  dapibus porttitor.
+                </p>
+              </div>
+              <div class="skill-container-item">
+                <p class="item-title skill-title">React</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean nec dictum ipsum, quis molestie leo. Integer blandit
+                  dapibus porttitor.
+                </p>
+              </div>
+              <div class="skill-container-item">
+                <p class="item-title skill-title">HTML & CSS</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean nec dictum ipsum, quis molestie leo. Integer blandit
+                  dapibus porttitor.
+                </p>
+              </div>
+              <div class="skill-container-item">
+                <p class="item-title skill-title">Other</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean nec dictum ipsum, quis molestie leo. Integer blandit
+                  dapibus porttitor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="section-4"
+          name="contact"
+          class="section-container section-block"
+        >
+          <h2 class="section-title">You can find me here:</h2>
+          <div class="contact-container">
+            <div class="contact-container-item">
+              <p class="title">Linkedin</p>
+              <div class="contact-img-container">
+                <img
+                  src="/src/img/icons8-linkedin-100.png"
+                  alt=""
+                  class="img icon"
+                />
+              </div>
+            </div>
+            <div class="contact-container-item">
+              <p class="title">Github</p>
+              <div class="contact-img-container">
+                <img
+                  src="/src/img/icons8-github-100.png"
+                  alt=""
+                  class="img icon"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <h3>Stuff</h3>
+      </footer>
+    </div>
+  </body>
+</html>
