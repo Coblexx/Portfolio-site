@@ -217,6 +217,8 @@ body {
   text-align: center;
 }
 
+/* contact section */
+
 .contact-container {
   display: flex;
   justify-content: space-around;
@@ -227,10 +229,12 @@ body {
 .contact-container-item {
   display: block;
   justify-content: center;
+  text-align: center;
 }
 
 .contact-container-item > .title {
   font-size: 2rem;
+  padding: 1rem;
 }
 
 @keyframes h1-main-slide {
