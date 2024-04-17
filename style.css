@@ -96,7 +96,6 @@ body {
 
 .nav-bar {
   display: flex;
-
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   background-image: linear-gradient(
     to left,
@@ -104,16 +103,21 @@ body {
     var(--main-bg-color2)
   );
 
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
   padding: 2rem 0;
 }
 
+.nav-hamburger-menu {
+  position: absolute;
+}
 .nav-logo {
   width: 5rem;
   height: 4.2rem;
 }
 
 .nav-links {
+  display: flex;
   justify-content: flex-end;
 }
 

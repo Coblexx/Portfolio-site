@@ -30,8 +30,12 @@ navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
 
-    sectionNum = document.querySelector(`#${link.dataset.section}`);
-    sectionNum.scrollIntoView({ behavior: "smooth" });
+    let sectionNum = document.querySelector(`#${link.dataset.section}`);
+
+    if (!sectionNum) {
+      sectionNum = document.body;
+      sectionNum.scrollIntoView({ behavior: "smooth" });
+    } else sectionNum.scrollIntoView({ behavior: "smooth" });
   });
 });
 
@@ -40,7 +44,6 @@ navLinks.forEach((link) => {
 sections.forEach((section) => {
   const separator = document.createElement("div");
   separator.classList.add("separator");
-  console.log(sections);
 
   if (section.id !== "section-1")
     section.parentNode.insertBefore(separator, section.nextSibling);
