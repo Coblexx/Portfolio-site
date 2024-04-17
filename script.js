@@ -46,8 +46,7 @@ sections.forEach((section) => {
   const separator = document.createElement("div");
   separator.classList.add("separator");
 
-  if (section.id !== "section-1")
-    section.parentNode.insertBefore(separator, section.nextSibling);
+  if (section.id !== "section-1") section.appendChild(separator);
 });
 
 // STICKY NAV

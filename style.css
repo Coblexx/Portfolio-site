@@ -64,7 +64,8 @@ body {
   border-bottom: 3px solid var(--main-separator);
   opacity: 0.2;
   width: 70%;
-  margin: 2rem auto;
+  margin: 7rem auto;
+  margin-bottom: 0;
 }
 
 .item-title {
@@ -350,6 +351,10 @@ body {
     display: none;
   }
 
+  .separator {
+    margin: 4rem auto;
+  }
+
   .section-title {
     text-align: center;
     padding: 1rem 2rem;
@@ -421,17 +426,29 @@ body {
     position: relative;
   }
 
+  .slider-title {
+    text-align: center;
+  }
+
+  .slider-item {
+    font-size: 1rem;
+  }
+
   /* skills */
 
   .skill-container {
     justify-content: center;
-    width: 100%;
   }
 
   .skill-container-item {
     margin: 0;
-    padding: 0 3rem;
-    width: 80%;
+    min-width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .skill-title {
+    padding: 1.2rem;
+    text-align: center;
   }
 
   /* contact */
