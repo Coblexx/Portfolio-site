@@ -11,6 +11,7 @@ const sliderBtnNext = document.querySelector("#slider-btn-next");
 const sliderBtnPrev = document.querySelector("#slider-btn-prev");
 const lazyImg = document.querySelectorAll("img[data-src]");
 
+// SLIDES TO GENERATE
 const addSlides = [
   {
     title: "Portfolio Site!",
@@ -26,6 +27,7 @@ const addSlides = [
   },
 ];
 
+// NAVIGATION BEHAVIOR
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -39,8 +41,7 @@ navLinks.forEach((link) => {
   });
 });
 
-// ADD SEPARATOR AFTER EACH SECTION
-
+// ADD SEPARATOR AFTER EACH SECTION - fix, add it at the end of the section
 sections.forEach((section) => {
   const separator = document.createElement("div");
   separator.classList.add("separator");

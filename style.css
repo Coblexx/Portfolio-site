@@ -13,7 +13,7 @@
 body {
   color: white;
   font-family: "Roboto serif", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 200;
   background-image: linear-gradient(
     to left,
@@ -244,6 +244,7 @@ body {
   padding: 2rem 3rem;
   flex-grow: 1;
   width: 20%;
+  max-width: 40%;
 }
 
 .skill-title {
