@@ -110,10 +110,11 @@ body {
   justify-content: space-between;
   padding: 2rem 0;
 }
-
+/* 
 .nav-hamburger-menu {
   position: absolute;
-}
+} */
+
 .nav-logo {
   width: 5rem;
   height: 4.2rem;
@@ -137,6 +138,10 @@ body {
   z-index: 1000;
 
   transition: top 0.2s ease-in-out;
+}
+
+.nav-to-top-arr {
+  display: none;
 }
 
 .header-img-container {
@@ -242,6 +247,7 @@ body {
 
 .arr img {
   height: 20px;
+  width: auto;
   margin: auto 0;
 }
 
@@ -376,6 +382,10 @@ body {
     display: none;
   }
 
+  .show-arr-to-top {
+    display: inline-block;
+  }
+
   .separator {
     margin: 4rem auto;
   }
@@ -423,12 +433,6 @@ body {
 
   .slider-btn {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /* font-size: 3rem; */
-    color: var(--main-bg-color1);
     background-color: var(--main-font-color);
 
     border-radius: 50%;
@@ -452,12 +456,15 @@ body {
   }
 
   .slider-item {
-    font-size: 1rem;
+    width: 100vw;
+    padding: 0;
+  }
+
+  .slider-img {
+    display: none;
   }
 
   /* skills */
-
-  /* adjust the skill item width */
   .skill-container {
     justify-content: center;
   }
@@ -469,7 +476,6 @@ body {
   }
 
   .skill-title {
-    padding: 1.2rem;
     text-align: center;
   }
 

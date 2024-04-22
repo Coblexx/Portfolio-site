@@ -1,5 +1,6 @@
 const navLinks = document.querySelectorAll(".nav-item");
 const navBar = document.querySelector(".nav-bar");
+const arrToTopMobile = document.querySelector(".nav-to-top-arr");
 const sectionOne = document.querySelector("#section-1");
 const logotype = document.querySelector(".logotype");
 const headerImg = document.querySelector(".header-img");
@@ -56,9 +57,12 @@ function stickyNavObserver(entries) {
   if (!entry.isIntersecting) {
     navBar.classList.add("sticky-nav");
     navBar.style.top = "0px";
+
+    arrToTopMobile.classList.add("show-arr-to-top");
   } else {
     setTimeout(() => {
       navBar.classList.remove("sticky-nav");
+      arrToTopMobile.classList.remove("show-arr-to-top");
     }, 200);
     navBar.style.top = "-80px";
   }
