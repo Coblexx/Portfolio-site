@@ -95,23 +95,34 @@ lazyImg.forEach((img) => lazyImgObserver.observe(img));
 
 // ADD SLIDES
 addSlides.forEach(function (slide) {
-  const { title, content, link = "#" } = slide;
+  const {
+    title,
+    content,
+    link = "#",
+    img = "src/img/project-icon.png",
+  } = slide;
   const html = ` 
   <div class="slider-item">
-  <p class="slider-title">${title}</p>
-  <p class="slider-content">
-    ${content}
-  </p>
-  ${
-    link
-      ? ` 
-  <div class="slider-link-container">
-  <a href="${link}" class="slider-link link" target="_blank"
-    >Github &rsaquo;</a
-  >
-</div>`
-      : ""
-  } `;
+    <p class="slider-title">${title}</p>
+    <div class="slider-item-desc">
+      <img src=${img} class="slider-img"/>
+      <p class="slider-content">
+      ${content}
+      </p>
+    </div>
+    ${
+      link
+        ? `
+      <div class="slider-link-container">
+        <a href="${link}" class="slider-link link" target="_blank">
+          Github &rsaquo;
+        </a>
+      </div>
+    `
+        : ""
+    }
+    </div>  
+  `;
 
   slider.insertAdjacentHTML("beforeend", html);
   slides = document.querySelectorAll(".slider-item");

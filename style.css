@@ -186,11 +186,15 @@ body {
 .slider-container {
   display: flex;
 
+  justify-content: center;
+
   margin: 0 4rem;
 }
 
 .slider {
   order: 1;
+  width: 60vw;
+
   display: flex;
   overflow: hidden;
 }
@@ -200,9 +204,17 @@ body {
   padding: 0 3rem;
 }
 
+.slider-item-desc {
+  display: flex;
+}
+
 .slider-title {
   font-size: 2rem;
   padding: 2rem 0;
+}
+
+.slider-img {
+  height: 200px;
 }
 
 .slider-link-container {
