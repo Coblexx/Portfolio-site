@@ -2,6 +2,8 @@
   --main-bg-color1: #069b73;
   --main-bg-color2: #1f403c;
   --main-separator: #112b28;
+
+  --main-font-color: #e5e5e5;
 }
 
 * {
@@ -11,10 +13,10 @@
 }
 
 body {
-  color: white;
+  color: var(--main-font-color);
   font-family: "Roboto serif", sans-serif;
   font-size: 1.1rem;
-  font-weight: 200;
+  font-weight: 300;
   background-image: linear-gradient(
     to left,
     var(--main-bg-color1),
@@ -211,23 +213,34 @@ body {
 }
 
 .slider-btn {
-  font-size: 5rem;
+  margin: 3rem;
 
-  margin: 0 3rem;
+  position: absolute;
+  background-color: var(--main-font-color);
 
-  background: none;
   border: none;
-  color: inherit;
+  border-radius: 50%;
+  width: 2.7rem;
+  height: 2.7rem;
+
+  z-index: 3;
 
   cursor: pointer;
 }
 
+.arr img {
+  height: 20px;
+  margin: auto 0;
+}
+
 #slider-btn-prev {
   order: 0;
+  left: 0;
 }
 
 #slider-btn-next {
   order: 1;
+  right: 0;
 }
 
 /* skill section */
@@ -356,8 +369,7 @@ body {
   }
 
   .section-title {
-    text-align: center;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
   }
 
   #section-1 {
@@ -365,6 +377,7 @@ body {
     flex-direction: column;
 
     justify-content: center;
+    margin-bottom: 4rem;
   }
 
   .header {
@@ -388,7 +401,7 @@ body {
   }
 
   .h1-primary-sub {
-    font-size: 1rem;
+    font-size: 1.7rem;
     text-align: center;
 
     animation: none;
@@ -398,23 +411,19 @@ body {
 
   .slider-btn {
     position: absolute;
-    margin: 0 0.4rem;
-    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    color: var(--main-bg-color1);
+    background-color: var(--main-font-color);
 
-    border: 1rem;
+    border-radius: 50%;
+    width: 2.7rem;
+    height: 2.7rem;
+
     z-index: 3;
-
-    top: 50%;
-  }
-
-  #slider-btn-next {
-    right: 0;
-  }
-
-  #slider-btn-prev {
-    left: 0;
   }
 
   .slider-container {
@@ -427,7 +436,7 @@ body {
   }
 
   .slider-title {
-    text-align: center;
+    padding: 1rem 0;
   }
 
   .slider-item {
@@ -436,13 +445,14 @@ body {
 
   /* skills */
 
+  /* adjust the skill item width */
   .skill-container {
     justify-content: center;
   }
 
   .skill-container-item {
     margin: 0;
-    min-width: 100%;
+    min-width: 80%;
     padding: 1rem 2rem;
   }
 
