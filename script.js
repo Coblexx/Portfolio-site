@@ -147,12 +147,29 @@ function changeSlidePosition(curSlide) {
 }
 changeSlidePosition(0);
 
+function changeSlide(reverse = false) {
+  if (!reverse) slideId = slideId === lastSlideId ? 0 : slideId + 1;
+  else if (reverse) slideId = slideId === 0 ? lastSlideId : slideId - 1;
+}
+
 sliderBtnNext.addEventListener("click", () => {
-  slideId = slideId === lastSlideId ? 0 : slideId + 1;
+  changeSlide();
   changeSlidePosition(slideId);
 });
 
 sliderBtnPrev.addEventListener("click", () => {
-  slideId = slideId === 0 ? lastSlideId : slideId - 1;
+  changeSlide(true);
   changeSlidePosition(slideId);
 });
+
+// SLIDE INTERVAL
+
+function sliderInterval() {
+  if (slides.length > 1) {
+    setInterval(() => {
+      changeSlide();
+      changeSlidePosition(slideId);
+    }, 1000 * 30);
+  }
+}
+sliderInterval();
