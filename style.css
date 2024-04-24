@@ -306,6 +306,11 @@ body {
   padding: 1rem;
 }
 
+.footer-copyright {
+  text-align: center;
+  padding: 1rem 1rem;
+}
+
 @keyframes h1-main-slide {
   0% {
     transform: translate(-100px);
@@ -374,7 +379,7 @@ body {
   }
 
   .nav-logo {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .nav-links,
@@ -405,7 +410,6 @@ body {
   .header {
     order: 5;
     width: 100%;
-    font-size: 1rem;
   }
 
   .header-img-container {
@@ -423,7 +427,7 @@ body {
   }
 
   .h1-primary-sub {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     text-align: center;
 
     animation: none;

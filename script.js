@@ -1,3 +1,5 @@
+"use strict";
+
 const navLinks = document.querySelectorAll(".nav-item");
 const navBar = document.querySelector(".nav-bar");
 const arrToTopMobile = document.querySelector(".nav-to-top-arr");
@@ -42,7 +44,7 @@ navLinks.forEach((link) => {
   });
 });
 
-// ADD SEPARATOR AFTER EACH SECTION - fix, add it at the end of the section
+// ADD SEPARATOR AFTER EACH SECTION
 sections.forEach((section) => {
   const separator = document.createElement("div");
   separator.classList.add("separator");
