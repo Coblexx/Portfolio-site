@@ -286,23 +286,18 @@ body {
 .contact-container {
   display: flex;
   justify-content: space-around;
-
-  margin: 0 20%;
 }
 
 .contact-container-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-
-  margin: 0 5rem;
 }
 
-.contact-container-item > a {
+.contact-link {
   font-size: 2rem;
-  padding: 0 1rem;
-  margin: 3rem;
+  margin: 2rem 0;
+
+  max-width: fit-content;
 }
 
 .footer-copyright {
@@ -484,7 +479,13 @@ body {
 
   /* contact */
 
-  #section-4 {
-    display: none;
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact-container-item {
+    min-width: 80%;
+    padding: 1rem 2rem;
   }
 }
