@@ -24,7 +24,7 @@ Since this is my first project, any feedback is much appreciated.
 You can contact me via:
 
 My mail:
-radek.glogowski3@gmail.com
+radekblexx@gmail.com
 
 My Linkedin page:
 https://www.linkedin.com/in/rados%C5%82aw-g%C5%82ogowski/
