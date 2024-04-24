@@ -111,7 +111,7 @@ addSlides.forEach(function (slide) {
   <div class="slider-item">
     <p class="slider-title">${title}</p>
     <div class="slider-item-desc">
-      <img src=${img} class="slider-img"/>
+      <img src=${img} class="slider-img img"/>
       <p class="slider-content">
       ${content}
       </p>

@@ -18,7 +18,6 @@ body {
   font-size: 1.1rem;
   font-weight: 300;
   background-image: linear-gradient(
-    to left,
     var(--main-bg-color1),
     var(--main-bg-color2)
   );
@@ -110,10 +109,6 @@ body {
   justify-content: space-between;
   padding: 2rem 0;
 }
-/* 
-.nav-hamburger-menu {
-  position: absolute;
-} */
 
 .nav-logo {
   width: 5rem;
@@ -254,6 +249,8 @@ body {
 #slider-btn-prev {
   order: 0;
   left: 0;
+
+  transform: scaleX(-1);
 }
 
 #slider-btn-next {
@@ -294,16 +291,18 @@ body {
 }
 
 .contact-container-item {
-  display: block;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
 
   margin: 0 5rem;
 }
 
-.contact-container-item > .title {
+.contact-container-item > a {
   font-size: 2rem;
-  padding: 1rem;
+  padding: 0 1rem;
+  margin: 3rem;
 }
 
 .footer-copyright {
